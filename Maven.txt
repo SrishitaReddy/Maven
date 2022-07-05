@@ -1,0 +1,83 @@
+                                                            *MAVEN*
+
+* What is maven?
+    Apache Maven is a software project management and comprehension tool.
+    • It is based on the concept of a project object model (POM)
+    • Maven can manage a project's build, reporting and documentation from a 
+      central piece of information.
+    • In Yiddish, the word maven means "accumulator of knowledge.
+
+* How to use?
+  Maven is a powerful project management tool that is based on POM (project object model).
+  It is used for projects build, dependency and documentation.
+  It simplifies the build process like ANT. But it is too much advanced than ANT.
+
+* ANT
+  Ant is procedural, you need to provide information about what to do and when to do through code. You need to provide order.
+  It is a tool box.	
+  It is mainly a build tool.	
+  The ant scripts are not reusable.
+
+* What is maven repo?
+  Maven repositories are physical directories which contain packaged JAR files along with extra meta data about these jar files. 
+  This meta data is in form of POM files which have jar file project information, including what other external dependencies this JAR file has.
+
+*Difference between maven and maven repo?
+ Maven Repository is a directory where all the project jars, library jar and plugins can be used by Maven/Gradle easily.
+ Maven Repository are of three types: local, central or remote. 
+ Gradle can and use the Maven Repositories, as I've said before, Gradle is build on top of Maven concepts.
+
+*Commands of Maven
+ -mvn clean
+ -mvn compiler compile
+ -mvn compiler:testcompile
+ -mvn package
+ -mvn install
+ -mvn deploy
+ -mvn validate
+ -mvn dependency:tree
+ -mvn dependency:analyze
+ -mvn archetype:generate
+ -mvn site:site
+ -mvn test
+ -mvn compile
+ -mvn verify
+ -mvn-help
+ -mvn -o package
+ -mvn -q package
+ -mvn -X package
+ -mvn -v
+
+*How to create a Maven
+ Maven uses archetype plugins to create projects. To create a simple java application, we'll use maven-archetype-quickstart plugin. 
+ For example, we'll create a maven based java application project in C:\MVN folder.
+ Open the command console, go to the C:\MVN directory and execute the following mvn command.
+ Make sure that C:\MVN directory is empty before running the command.
+
+*What is POM?
+ POM stands for Project Object Model. It is fundamental unit of work in Maven.
+ It is an XML file that resides in the base directory of the project as pom.xml. 
+
+*What contains POM?
+ The POM contains information about the project and various configuration detail used by Maven to build the project.
+
+*What is ArtifictID?
+ ArtifactId is the name of the jar without version.
+ If you created it then you can choose whatever name you want with lowercase letters and no strange symbols. 
+ If it's a third party jar you have to take the name of the jar as it's distributed. 
+
+*What is GroupID?
+ GroupId uniquely identifies your project across all projects.
+ A group ID should follow Java's package name rules. 
+ This means it starts with a reversed domain name you control. 
+ For example, org.apache.maven, org.apache.commons. Maven does not enforce this rule.
+
+*What is the advantage of Maven?
+ -Eases the building process for any project.
+ -It maintains uniformity throughout the entire build process.
+ -It’s very important to understand the project that we are working on. It provides comprehensive information about the project.
+ -To ensure quality in a project, it’s necessary to develop it in the best possible manner, and It provides the guidelines to do just that.
+ -Often in a project, it’s required to migrate to new features, and with it, the migration is simplified.
+
+
+
